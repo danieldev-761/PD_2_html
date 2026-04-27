@@ -287,13 +287,52 @@ footer {
 }
 
 
-/* Puedes usar esto si quieres centrar contenido */
-/* .container {
-    
-} */
 
 
-@media (max-width: 1024px) {
+/* Tablet and Smartphones */
+
+
+@media (min-width: 747px) and (max-width: 1024px) {
+
+    body {
+        font-size: 14px;
+    }
+
+
+    .menu-toggle{
+        display:block;
+        cursor: pointer;
+
+    }
+
+    .nav_list{
+        display: none;
+    }
+
+    .media_grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .about_content{
+        display: flex;
+        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
+    }
+
+    .values-container{
+        justify-content: center;
+    }
+
+  
+}
+
+
+@media (max-width: 746px) {
 
     body {
         font-size: 14px;
@@ -329,10 +368,5 @@ footer {
         justify-content: center;
     }
 
-    /* Hint clave */
-    /* piensa en:
-       - menús colapsables
-       - layouts en columna
-       - imágenes adaptativas
-    */
+  
 }

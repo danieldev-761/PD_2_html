@@ -5,23 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("year").innerText = date.getFullYear();
 
 
-    const hamburger= document.getElementById("hamburger");
+    const hamburger= document.querySelector("#hamburger");
 
-    const navlist= document.getElementsByClassName("nav")
+    const navlist= document.querySelector("#navbar")
    
 
-    hamburger.addEventListener('click'), function () {
 
-        
+    function toggleMenu() {
+    navlist.style.display = (navlist.style.display === "none") ? "block" : "none";
+}
 
-        if (navlist.style.display === "none") {
-            navlist.style.display = "flex";
-            navlist.style.flexDirection= "column";
-            
-        } else {
-            navlist.style.display = "none";
-        }
-    }
+    hamburger.addEventListener("click", toggleMenu);
+
+
 
 
     // Contact form
@@ -29,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent default form submission
-        alert("Gracias por tu mensaje. Pronto te contactaré."); // Success message
+        alert("Thank you for your message. We will contact you soon..."); // Success message
     });
 
 });
