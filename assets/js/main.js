@@ -11,14 +11,26 @@ document.addEventListener("DOMContentLoaded", function () {
    
 
 
-    function toggleMenu() {
-    navlist.style.display = (navlist.style.display === "none") ? "block" : "none";
-}
-
-    hamburger.addEventListener("click", toggleMenu);
+    
 
 
 
+
+    hamburger.addEventListener('click'), function () {
+
+        
+
+        if (navlist.style.display === 'none') {
+            navlist.style.display = 'flex';
+            navlist.style.flexDirection= 'column';
+            
+        } else {
+            navlist.style.display = 'none';
+        }
+    }
+
+
+    
 
     // Contact form
     const form = document.querySelector(".form");
