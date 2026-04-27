@@ -6,7 +6,7 @@
 
 html{
     scroll-behavior: smooth;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%; 
     overflow-x: hidden; 
 }
@@ -185,10 +185,15 @@ h2{
 
 h3{
     color: #c60f0f;
+    text-align: center;
 }
 
 .menu-toggle{
     display:none;
+    color: #c60f0f;
+    padding: 0.2rem 0.5rem;
+    margin-right: 2rem;
+
 
 }
 
@@ -199,12 +204,17 @@ h3{
     align-items: center;
 }
 
-.values{
+.values, .influences{
     margin-left: 1rem;
 }
 
-.values li::marker{
+.values li::marker, .influences li::marker{
     color: #c60f0f;
+}
+
+.values-container{
+    display: flex;
+    justify-content: space-around;
 }
 
 .media{
@@ -268,9 +278,13 @@ footer {
     color: white;
 }
 
-.footer-container li{
+.social li{
     list-style-type: none;
 } 
+
+.social a:hover{
+    color: #c60f0f;
+}
 
 
 /* Puedes usar esto si quieres centrar contenido */
@@ -279,23 +293,40 @@ footer {
 } */
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     body {
         font-size: 14px;
     }
 
-    main {
-        width: 95%;
-    }
-
-    section {
-        margin: 2rem 0;
-    }
 
     .menu-toggle{
         display:block;
+        cursor: pointer;
 
+    }
+
+    .nav_list{
+        display: none;
+    }
+
+    .media_grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .about_content{
+        display: flex;
+        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
+    }
+
+    .values-container{
+        justify-content: center;
     }
 
     /* Hint clave */

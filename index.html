@@ -22,7 +22,7 @@
 
         <!-- Nav for desktop / hamburger for mobile -->
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav_list">
             <li><a href="#events">EVENTS</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#media">MEDIA</a></li>
@@ -31,7 +31,7 @@
         </nav>
 
         <!-- Hint for JS (optional extra points) -->
-        <button class="menu-toggle">☰</button>
+        <button class="menu-toggle" id="hamburger">☰</button>
       </div>
     </header>
 
@@ -105,12 +105,26 @@
               experience.
             </p>
 
-            <h3>OUR VALUES</h3>
-            <ul class="values">
-              <li>Classic Rock</li>
-              <li>Hard Rock</li>
-              <li>Alternative</li>
-            </ul>
+            
+            <div class="values-container">
+                
+                <ul class="influences">
+                    <h3>OUR INFLUENCES</h3> 
+                    <li>Classic Rock</li>
+                    <li>Hard Rock</li>
+                    <li>Alternative</li>
+                </ul>
+
+                
+                <ul class="values">
+                    <h3>OUR VALUES</h3>
+                    <li>Rebellion</li>
+                    <li>Freedom</li>
+                    <li>Authenticity</li>
+                </ul>
+            </div>
+
+            
           </div>
         </div>
       </section>
@@ -136,11 +150,11 @@
     <section class="contact-container" id="contact">
         <h2>Contact</h2>
 
-        <form class="form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Mail">
-            <textarea placeholder="Message"></textarea>
-            <button class="btn">Sent</button>
+        <form class="form" action="#" method="post">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Mail" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Sent</button>
         </form>
     </section>
 
@@ -152,9 +166,9 @@
         <!-- Another possible list -->
         <ul class="social">
             <h4>Social Networks</h4>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-          <li><a href="https://spotify.com" target="_blank">Spotify</a></li>
-          <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://spotify.com" target="_blank">Spotify</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
         </ul>
 
         <p>© <span id="year"></span> Shattered Riffs</p>

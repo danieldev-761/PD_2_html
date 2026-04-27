@@ -152,14 +152,6 @@ This is **not required**, but can give extra value.
 
 ---
 
-## 📝 Good Practices
-
-* Keep your code **clean and readable**
-* Use indentation consistently
-* Write comments when necessary (in English)
-* Organize sections clearly
-
----
 
 ## 🚀 How to Run
 
@@ -170,18 +162,4 @@ No installation required.
 
 ---
 
-## 🧠 Final Note
 
-This project is not about copying a design exactly.
-
-It is about:
-
-* Understanding structure
-* Making design decisions
-* Applying responsive techniques
-
-Your solution should reflect your own approach while meeting the requirements.
-
----
-
-🔥 Good luck and rock on!
