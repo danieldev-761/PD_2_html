@@ -6,13 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const hamburger= document.getElementById("hamburger");
+
+    const navlist= document.getElementsByClassName("nav")
    
 
-    hamburger.addEventListener("click"), function (navlist) {
+    hamburger.addEventListener('click'), function () {
 
-        const navlist= document.getElementsByClassName("nav")
+        
 
-        if (caja.style.display === "none") {
+        if (navlist.style.display === "none") {
             navlist.style.display = "flex";
             navlist.style.flexDirection= "column";
             
@@ -22,21 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    // Contact form
+    const form = document.querySelector(".form");
 
-
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-        // Contact form
-        const form = document.querySelector(".form");
-
-        form.addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent default form submission
-            alert("Gracias por tu mensaje. Pronto te contactaré."); // Success message
-        });
-
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default form submission
+        alert("Gracias por tu mensaje. Pronto te contactaré."); // Success message
     });
 
-}
-);
+});
+

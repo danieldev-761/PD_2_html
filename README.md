@@ -1,27 +1,13 @@
 # 🎸 Landing Page – Rock Band (HTML & CSS Assessment)
 
-## 📌 Project Overview
+## 📌 Project Description
 
-This project is a **starter template** for a performance assessment focused on building a responsive landing page for a rock band.
+This project is about creating a responsive homepage for a rock band.
 
-The goal is to transform this base into a **visually engaging, responsive, and well-structured website** that promotes the band, their identity, and upcoming events.
-
----
-
-## 🎯 What is Expected
-
-You are expected to:
-
-* Build a complete landing page using **semantic HTML5**.
-* Apply **CSS3 styles** to achieve a strong visual identity (rock style).
-* Implement **responsive design** for both:
-
-  * Desktop (>1024px)
-  * Mobile
-* Use **Flexbox and/or Grid** where appropriate.
-* Ensure the page is **clean, readable, and well-organized**.
+The goal was to transform this basic site into a visually appealing, responsive, and well-structured website that promotes the band, its identity, and its upcoming events.
 
 ---
+
 
 ## 🧱 Project Structure
 
@@ -33,7 +19,7 @@ You are expected to:
 │   │   └── logo.ico
 │   ├── img
 │   │   ├── img-1.jpg ... img-10.jpg
-│   │   └── guide.png
+│   │   └── 
 │   └── js
 │       └── main.js
 ├── index.html
@@ -42,79 +28,64 @@ You are expected to:
 
 ---
 
-## 🧩 HTML Guidelines
+## 🧩 HTML
+The `index.html` file includes:
 
-Your `index.html` already includes the base structure.
+* Semantic tags:
 
-You must:
+* `<header>`
 
-* Use semantic tags:
+* `<nav>`
 
-  * `<header>`
-  * `<nav>`
-  * `<main>`
-  * `<section>`
-  * `<article>`
-  * `<footer>`
+* `<main>`
 
-* Include the following sections:
+* `<section>`
 
-  * Hero (main visual section)
-  * Events (band tour dates)
-  * About (band info)
-  * Multimedia (images or media content)
+* `<footer>`
 
-* Add at least one **unordered list (`<ul>`)**:
+### Includes the following sections:
 
-  * Influences
-  * Values
-  * Social links
+* Hero (main visual section)
 
-* (Optional – Extra Points)
+* Events (tour dates)
 
-  * Use a **table (`<table>`)** for events
+* About (band information): Influences,  Values
 
-👉 Focus on **clean structure and readability**.
+* Multimedia (images or multimedia content)
+
+* Contact form
+
+* Social media links
+
+* Table (`<table>`) for events
+
 
 ---
 
-## 🎨 CSS Guidelines
+## 🎨 CSS 
 
-The provided `style.css` is intentionally minimal.
-
-You should:
-
-* Define your own:
-
-  * Colors (rock style recommended)
-  * Typography
-  * Spacing
-
-* Apply layout techniques:
+* Applied layout techniques:
 
   * Flexbox
   * Grid
 
-* Implement responsive design using **media queries**
+* Implemented responsive design using **media queries**
 
-* Ensure:
+* This ensure:
 
   * Proper spacing between sections
   * Visual hierarchy (titles, buttons, content)
   * Consistent styling
 
-👉 Avoid writing everything in one block. Organize your CSS clearly.
 
 ---
 
 ## 📱 Responsive Design
 
-Your site **must adapt** to different screen sizes.
-
-Minimum requirement:
+The  site **adapt** to different screen sizes:
 
 * Desktop layout (>1024px)
-* Mobile layout
+* Mobile layout (Tablet and Smartphones)
 
 Hints:
 
@@ -124,31 +95,14 @@ Hints:
 
 ---
 
-## 🖼️ Images & Assets
 
-Inside `/assets/img` you will find:
+## ⚙️ JavaScript 
 
-* Multiple images (`img-1.jpg` to `img-10.jpg`)
-* A visual reference: `guide.png`
-
-Use these images to:
-
-* Build the hero section
-* Populate the gallery
-* Add visual identity to the page
-
-⚠️ The guide is a **reference**, not something to copy exactly.
-
----
-
-## ⚙️ JavaScript (Optional)
-
-The file `main.js` is included for optional enhancements:
+The file `main.js` is included for:
 
 * Mobile menu toggle
-* Simple interactions
+* Simple interactions (form action)
 
-This is **not required**, but can give extra value.
 
 ---
 
@@ -158,8 +112,9 @@ This is **not required**, but can give extra value.
 1. Download or clone the project
 2. Open `index.html` in your browser
 
-No installation required.
 
 ---
 
+## Author
+ - Daniel Echeverría - Coder Riwi
 
